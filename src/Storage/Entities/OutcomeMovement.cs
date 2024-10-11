@@ -3,7 +3,7 @@ using Storage.Records;
 
 namespace Storage.Entities;
 
-[Table("outcome_movement")]
+[Table("outcome_movements")]
 public class OutcomeMovement : Movement
 {
     [Column("category")]

@@ -2,7 +2,7 @@
 
 namespace Storage.Records;
 
-[Table("outcome_movement_category")]
+[Table("outcome_movement_categories")]
 public record OutcomeMovementCategory : MovementCategory
 {
     

@@ -3,9 +3,9 @@ using Storage.Records;
 
 namespace Storage.Entities;
 
-[Table("income_movement")]
+[Table("income_movements")]
 public class IncomeMovement : Movement
 {
-    // [Column("category")]
-    // public IncomeMovementCategory Category { get; set; } = new IncomeMovementCategory();
+    [Column("category")]
+    public IncomeMovementCategory Category { get; set; } = new IncomeMovementCategory();
 }
