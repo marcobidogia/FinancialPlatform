@@ -3,7 +3,7 @@ using Storage.contexts;
 
 namespace Storage.Tests.fixtures;
 
-public class MovementContextFixture
+public class SqlDatabaseFixture
 {
     private const string ConnectionString = "Server=localhost;Database=FinancialPlatform;Integrated Security=SSPI;TrustServerCertificate=True";
     
