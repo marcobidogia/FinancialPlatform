@@ -61,7 +61,7 @@ public class InteractionWithSqlDatabase
         context.SaveChanges();
 
         // Assert
-        Assert.Equivalent(movement, repo.getOutcomeMovement(movement.Id));
+        Assert.Equivalent(movement, repo.GetOutcomeMovement(movement.Id));
         
         context.OutcomeMovements.Remove(movement);
         context.SaveChanges();
