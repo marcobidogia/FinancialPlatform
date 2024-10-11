@@ -3,6 +3,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e3194713_002D25c6_002D4a4d_002Db328_002D87947bbaa109/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="InteractionWithSqlDatabase" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::289A7E1E-7254-4E22-B535-A83D94786FC7::net8.0::Storage.Tests.InteractionWithSqlDatabase&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8141E809-43EC-4E5D-AC2E-94EAF605568B::net8.0::MovementTracker.Tests.InterfaceFunctions.ShouldAddOneIncomeMovementInDatabase&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	

@@ -12,7 +12,7 @@ public abstract class Movement
     public DateTime Date { get; set; } = DateTime.Now;
     
     [Column("amount")]
-    public decimal Amount { get; set; }
+    public Double Amount { get; set; }
     
     [Column("notes")]
     public string Notes = string.Empty;
