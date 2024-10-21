@@ -40,7 +40,7 @@ jobs:
       - name: Publish Host in prerelease on github using version from host configuration
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         with:
             tag_name: ${{ github.ref }}
             release_name: Release ${{ github.ref }}
