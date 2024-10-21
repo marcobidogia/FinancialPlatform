@@ -22,7 +22,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MovementTracker\MovementTracker.csproj" />
       <ProjectReference Include="..\Storage\Storage.csproj" />
     </ItemGroup>
 

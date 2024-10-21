@@ -8,13 +8,12 @@ public interface IMovementTrackerRepository
 {
     public IncomeMovement GetIncomeMovement(int incomeId);
     public List<IncomeMovement> GetIncomeMovements();
-    
+    public void AddIncomeMovement(IncomeMovement incomeMovement);
+    public void UpdateIncomeMovement(IncomeMovement incomeMovement);
+    public void DeleteIncomeMovement(IncomeMovement incomeMovement);
     public OutcomeMovement GetOutcomeMovement(int outcomeId);
     public List<OutcomeMovement> GetOutcomeMovements();
-    
-    public IncomeMovementCategory GetIncomeMovementCategory(int incomeId);
-    public List<IncomeMovementCategory> GetIncomeMovementCategoryList();
-    
-    public OutcomeMovementCategory GetOutcomeMovementCategory(int outcomeId);
-    public List<OutcomeMovementCategory> GetOutcomeMovementCategoryList();
+    public void AddOutcomeMovement(OutcomeMovement outcomeMovement);
+    public void UpdateOutcomeMovement(OutcomeMovement outcomeMovement);
+    public void DeleteOutcomeMovement(OutcomeMovement outcomeMovement);
 }

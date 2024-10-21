@@ -16,6 +16,24 @@ public class MovementTrackerRepository(MovementTrackerDbContext context): IMovem
     {
         return context.IncomeMovements.ToList();
     }
+    
+    public void AddIncomeMovement(IncomeMovement incomeMovement)
+    {
+        context.IncomeMovements.Add(incomeMovement);
+        context.SaveChanges();
+    }
+    
+    public void UpdateIncomeMovement(IncomeMovement incomeMovement)
+    {
+        context.IncomeMovements.Update(incomeMovement);
+        context.SaveChanges();
+    }
+    
+    public void DeleteIncomeMovement(IncomeMovement incomeMovement)
+    {
+        context.IncomeMovements.Remove(incomeMovement);
+        context.SaveChanges();
+    }
 
     public OutcomeMovement GetOutcomeMovement(int outcomeId)
     {
@@ -27,23 +45,21 @@ public class MovementTrackerRepository(MovementTrackerDbContext context): IMovem
         return context.OutcomeMovements.ToList();
     }
 
-    public IncomeMovementCategory GetIncomeMovementCategory(int incomeId)
+    public void AddOutcomeMovement(OutcomeMovement outcomeMovement)
     {
-        return context.IncomeMovementCategories.Find(incomeId) ?? throw new KeyNotFoundException();
+        context.OutcomeMovements.Add(outcomeMovement);
+        context.SaveChanges();
     }
 
-    public List<IncomeMovementCategory> GetIncomeMovementCategoryList()
+    public void UpdateOutcomeMovement(OutcomeMovement outcomeMovement)
     {
-        return context.IncomeMovementCategories.ToList();
+        context.OutcomeMovements.Update(outcomeMovement);
+        context.SaveChanges();
     }
 
-    public OutcomeMovementCategory GetOutcomeMovementCategory(int outcomeId)
+    public void DeleteOutcomeMovement(OutcomeMovement outcomeMovement)
     {
-        return context.OutcomeMovementCategories.Find(outcomeId) ?? throw new KeyNotFoundException();
-    }
-
-    public List<OutcomeMovementCategory> GetOutcomeMovementCategoryList()
-    {
-        return context.OutcomeMovementCategories.ToList();
+        context.OutcomeMovements.Remove(outcomeMovement);
+        context.SaveChanges();
     }
 }
